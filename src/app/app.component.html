@@ -1,20 +1,3 @@
-<app-face-snap [faceSnap]="faceSnap1"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap2"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap3"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap4"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap5"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap6"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap7"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap8"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap9"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap10"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap11"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap12"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap13"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap14"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap15"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap16"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap17"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap18"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap19"></app-face-snap>
-<app-face-snap [faceSnap]="faceSnap20"></app-face-snap>
+@for(faceSnap of faceSnaps; track faceSnap.title){
+  <app-face-snap [faceSnap]="faceSnap" />
+}
